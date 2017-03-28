@@ -93,7 +93,7 @@ public class Calculator {
 
     }
      
-    public double subtraction(double sub1, double sub2) {
+    public static double subtraction(double sub1, double sub2) {
         return sub1 - sub2;
     }
 
