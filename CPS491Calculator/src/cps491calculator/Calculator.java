@@ -17,12 +17,13 @@ public class Calculator {
     public static void main(String[] args) {
         // TODO code application logic here
     }
-    public int square(int num){
-           return num*num;
-    }
 
     public double multiply(double first, double second){
         return first * second;
+    }
+    
+    public double addition(double add1, double add2) {
+        return add1 + add2;
     }
 
 }
