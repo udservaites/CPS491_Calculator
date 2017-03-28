@@ -16,8 +16,13 @@ public class Calculator {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
+        int choice = 0;
+        int operand1 = 0;
+        int operand2 = 0;
+        boolean go = true;
         //menu
+        
+        while(go) {
         System.out.println("Please select an option:\n"
                 + "1. Addition\n"
                 + "2. Subtraction\n"
@@ -29,12 +34,9 @@ public class Calculator {
         Scanner input = new Scanner(System.in);
         Scanner operand = new Scanner(System.in);
 
-        int choice = 0;
-        int operand1 = 0;
-        int operand2 = 0;
-        boolean go = true;
         
-        while(go) {
+        
+        
         choice = input.nextInt();
      
         switch (choice) {
@@ -43,29 +45,34 @@ public class Calculator {
                 operand1 = operand.nextInt();
                 System.out.println("Please enter an interger Operand 2:");
                 operand2 = operand.nextInt();
-                addition(operand1, operand2);
+                System.out.println(addition(operand1, operand2));
+                 break;
             case 2:
                 System.out.println("Please enter an interger Operand 1:");
                 operand1 = operand.nextInt();
                 System.out.println("Please enter an interger Operand 2:");
                 operand2 = operand.nextInt();
-                subtraction(operand1, operand2);
+                System.out.println(subtraction(operand1, operand2));
+                break;
             case 3:
                 System.out.println("Please enter an interger Operand 1:");
                 operand1 = operand.nextInt();
                 System.out.println("Please enter an interger Operand 2:");
                 operand2 = operand.nextInt();
-                multiply(operand1, operand2);
+                System.out.println(multiply(operand1, operand2));
+                break;
             case 4:
                 System.out.println("Please enter an interger Operand 1:");
                 operand1 = operand.nextInt();
                 System.out.println("Please enter an interger Operand 2:");
                 operand2 = operand.nextInt();
-                divide(operand1, operand2);
+                System.out.println(divide(operand1, operand2));
+                break;
             case 5:
                 System.out.println("Please enter an interger to square:");
                 operand1 = operand.nextInt();
-                square(operand1);
+                System.out.println(square(operand1));
+                break;
             case 6:
                 go = false;
 
@@ -77,7 +84,7 @@ public class Calculator {
 
     public static int add(int operand1, int operand2) {
 
-        return 0;
+        return operand1 + operand2;
     }
 
     public static double square(double num) {
