@@ -25,4 +25,13 @@ public class Calculator {
         return first * second;
     }
 
+    public static double divide(double numerator, double denominator){
+        if(denominator == 0){
+            System.out.println("Cannot divide by zero!");
+            exit(-1);
+        }
+        else {
+            return numerator / denominator;
+        }
+    }
 }
