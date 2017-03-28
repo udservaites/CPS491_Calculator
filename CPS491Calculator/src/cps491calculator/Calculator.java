@@ -18,5 +18,8 @@ public class Calculator {
         // TODO code application logic here
     }
 
+    public double multiply(double first, double second){
+        return first * second;
+    }
 
 }
