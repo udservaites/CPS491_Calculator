@@ -53,4 +53,8 @@ public class MainTest {
     public void AdditionTest1() {
         assert.equals(5, Calculator.add(2, 3));
     }
+    @Test
+    public void AdditionTestSquare() {
+        assert.equals(4, Calculator.square(2));
+    }
 }
