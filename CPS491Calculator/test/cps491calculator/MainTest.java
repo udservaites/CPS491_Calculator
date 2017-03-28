@@ -64,6 +64,6 @@ public class MainTest {
     
     @Test
     public void MultiplyTest1(){
-        assertEquals(39.6, Calculator.multiply(5.5, 7.2));
+        assertEquals(39.6, Calculator.multiply(5.5, 7.2), .001);
     }
 }
