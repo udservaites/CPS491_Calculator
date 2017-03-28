@@ -40,30 +40,40 @@ public class MainTest {
     /**
      * Test of main method, of class Main.
      */
-    //@Test
+    @Test
     public void testMain() {
         System.out.println("main");
         String[] args = null;
         Calculator.main(args);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
 
     @Test
     public void AdditionTest1() {
         assertEquals(5, Calculator.add(2, 3));
-        assertEquals(4.0, Calculator.square(2),.001);
+    }
+    @Test
+    public void AdditionTestSquare() {
+        assertEquals(4, Calculator.square(2), .001);
+    }
+    
+    @Test
+    public void SubtractionTest() {
+        assertEquals(5, Calculator.subtraction(5,2));
     }
 
     @Test
     public void divisionTest(){
-        assertEquals(4, Calculator.divide(16,4),.001);
-        assertEquals(5.5, Calculator.divide(55,10),.001);
+        assertEquals(4, Calculator.divide(16,4), .001);
+        assertEquals(5.5, Calculator.divide(55,10), .001);
         Calculator.divide(1,0);
     }
     
     @Test
     public void MultiplyTest1(){
+
         assertEquals(39.6, Calculator.multiply(5.5, 7.2), .001);
+
     }
 }
