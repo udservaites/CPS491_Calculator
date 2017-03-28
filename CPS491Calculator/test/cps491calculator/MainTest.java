@@ -44,9 +44,13 @@ public class MainTest {
     public void testMain() {
         System.out.println("main");
         String[] args = null;
-        Main.main(args);
+        Calculator.main(args);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
+    @Test
+    public void AdditionTest1() {
+        assert.equals(5, Calculator.add(2, 3));
+    }
 }
