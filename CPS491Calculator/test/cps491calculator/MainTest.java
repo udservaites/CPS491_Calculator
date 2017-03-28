@@ -64,4 +64,9 @@ public class MainTest {
         assert.equals(5.5, Calculator.divide(55,10));
         Calculator.divide(1,0);
     }
+    
+    @test
+    public void MultiplyTest1(){
+        assert.equals(39.6, calc.multiply(5.5, 7.2));
+    }
 }
