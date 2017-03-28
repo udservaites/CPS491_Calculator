@@ -29,6 +29,10 @@ public class Calculator {
     public double addition(double add1, double add2) {
         return add1 + add2;
     }
+     
+    public double subtraction(double sub1, double sub2) {
+        return sub1 - sub2;
+    }
 
     public static double divide(double numerator, double denominator){
         if(denominator == 0){
