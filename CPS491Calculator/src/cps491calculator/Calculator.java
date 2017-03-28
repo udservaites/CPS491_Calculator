@@ -18,6 +18,10 @@ public class Calculator {
         // TODO code application logic here
     }
 
+    public static double square(num){
+        return num*num;
+    }
+    
     public double multiply(double first, double second){
         return first * second;
     }
