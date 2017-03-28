@@ -57,4 +57,11 @@ public class MainTest {
     public void AdditionTestSquare() {
         assert.equals(4, Calculator.square(2));
     }
+
+    @Test
+    public void divisionTest(){
+        assert.equals(4, Calculator.divide(16,4));
+        assert.equals(5.5, Calculator.divide(55,10));
+        assert.equals("Cannot divide by zero!", Calculator.divide(1,0));
+    }
 }
